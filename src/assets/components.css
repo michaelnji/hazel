@@ -1,0 +1,49 @@
+/* @import './theme.css'; */
+
+.btn {
+    --color: var(--base-200);
+    --bg: var(--base-content);
+    --bg-dark: var(--base-content);
+    --radius: var(--roundness);
+    --font-size: 18px;
+    --shadow:var(--shadow-color);
+    padding: 10px 30px;
+    border-radius: var(--radius);
+    font-size: var(--font-size);
+    text-transform: capitalize;
+    font-weight: 500;
+    background: var(--bg);
+    color: var(--color);
+    border: 0;
+    cursor: pointer;
+    transition: all var(--transition-duration) var(--transition-easing);
+    display: flex;
+    align-items: center ;
+    justify-content: center;
+    gap: 9px;
+box-shadow: 0px 0px 0px 0px var(--shadow);
+
+    &:hover, &:focus {
+        box-shadow: 0px 0px 0px 6px var(--shadow);
+    }
+    &:active {
+        transform: scale(0.9);
+    }
+
+}
+
+.btn-primary {
+    --color: var(--primary-content);
+    --bg: var(--primary);
+    --bg-dark: var(--primary-hover);
+    --shadow: hsla(13, 35%, 28%, 0.349);
+}
+.btn-inverse {
+    --color: var(--base-content);
+    --bg: var(--base-100);
+}
+
+.btn-icon{
+    padding: 10px !important;
+    
+}
