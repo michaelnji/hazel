@@ -1,0 +1,209 @@
+.home-container {
+    padding-top: 5rem;
+}
+
+.hero {
+    display: grid;
+    grid-template-columns: 55% 45%;
+    align-items: center;
+    justify-content: space-around;
+    padding: 0px 5rem;
+    width: 100%;
+    row-gap: 4rem;
+
+    .hero-text {
+        /* width: 90%; */
+
+        h1 {
+            font-family: var(--family-head);
+            font-size: 5.5rem;
+            font-weight: 900;
+            line-height: 5.5rem;
+
+            span {
+                color: var(--primary);
+                font-weight: 900;
+            }
+        }
+
+        p {
+            margin-top: 2rem;
+            font-size: 24px;
+            max-width: 70%;
+            color: var(--base-content-lighter);
+
+            b {
+                font-weight: 500;
+            }
+
+        }
+
+        .cta-group {
+            margin-top: 4rem;
+        }
+    }
+}
+
+@media screen and (max-width:1524px) {
+    .hero {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 6rem 0px;
+        padding: 0;
+
+        margin: 0 auto;
+
+        .hero-text {
+            justify-content: center;
+            width: 100%;
+
+            h1 {
+                margin: 0px auto;
+                text-align: center;
+                max-width: 80%;
+
+                span {
+                    color: var(--primary);
+                    font-weight: 900;
+                }
+            }
+
+            p {
+                margin: 2rem auto 0px auto;
+                font-size: 24px;
+
+                color: var(--base-content-lighter);
+                text-align: center;
+
+                b {
+                    font-weight: 500;
+                }
+
+            }
+
+            .cta-group {
+                display: flex;
+                width: 100%;
+                justify-content: center;
+                margin-top: 3rem;
+            }
+        }
+    }
+}
+
+@media screen and (max-width:768px) {
+    .home-container {
+        padding-top: 2rem;
+    }
+
+    .hero {
+
+
+        .hero-text {
+            justify-content: center;
+            width: 80%;
+
+            h1 {
+                font-size: 3rem !important;
+                max-width: 100%;
+                line-height: 3rem !important;
+
+                span {
+                    color: var(--primary);
+                    font-weight: 900;
+                }
+            }
+
+            p {
+                margin: 2rem auto 0px auto;
+                font-size: 18px;
+
+                color: var(--base-content-lighter);
+                text-align: center;
+
+                b {
+                    font-weight: 500;
+                }
+
+            }
+
+            .cta-group {
+                display: flex;
+                width: 100%;
+                justify-content: center;
+                margin-top: 2rem;
+
+                .btn {
+                    --size: 10px 20px;
+                    --font-size: 18px;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width:500px) {
+    .home-container {
+        padding: 2rem 0 4rem 0;
+    }
+
+    .hero {
+
+
+        .hero-text {
+            justify-content: center;
+            width: 100% !important;
+
+            h1 {
+                font-size: 2.5rem !important;
+                max-width: 100%;
+                line-height: 2.5rem !important;
+
+                span {
+                    color: var(--primary);
+                    font-weight: 900;
+                }
+            }
+
+            p {
+                margin: 2rem auto 0px auto;
+                font-size: 16px;
+
+                color: var(--base-content-lighter);
+                text-align: center;
+
+                b {
+                    font-weight: 500;
+                }
+
+            }
+
+            .cta-group {
+                display: flex;
+                width: 100%;
+                justify-content: center;
+                margin-top: 2rem;
+
+                .btn {
+                    --size: 10px 20px;
+                    --font-size: 18px;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width:1024px) {
+    .hero {
+        padding: 0;
+
+        .hero-text {
+            h1 {
+                font-size: 4rem;
+                line-height: 4rem;
+            }
+        }
+    }
+}

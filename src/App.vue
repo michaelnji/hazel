@@ -15,10 +15,10 @@ import NavbarComp from '@/components/navbar/NavbarComp.vue'
   </div>
 </template>
 
-<style scoped>
+<style>
 .app{
-  background: var(--base-200);
+  background-color: var(--base-200);
   color: var(--base-content);
-  min-height: 100dvh;
+  width: 100%;
 }
 </style>

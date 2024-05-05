@@ -10,17 +10,16 @@
 body {
   min-height: 100vh;
   color: var(--base-content);
-  background: var(--base-200);
+  background-color: var(--base-200);
   transition:
     color 0.5s,
     background-color 0.5s;
-  line-height: 1.6;
-  font-family: var(--family-base);
-  font-size: 15px;
+  font-family: var(--family-body);
+    font-size: var(--font-size);
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-
+  
   a{
     text-decoration: none;
   }
